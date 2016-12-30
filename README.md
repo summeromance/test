@@ -65,7 +65,11 @@ After the installation, you can find binaries(Data Generator, VSSDataCollector T
 # Usage
 
 ### Run
-Prepare two terminal windows and navigate to the deploy directory of test.
+Prepare two terminal windows and navigate to the deploy directory of test.  
+Before run applications, add library search path for `VSI` and `VSSDataCollector` library to the `LD_LIBRARY_PATH` using following command in terminal:
+
+        $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+         
 Run DataGenerator application on one terminal
 
         $ ./DataGenerator
