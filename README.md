@@ -19,7 +19,7 @@ To build VSS Data Collector, following package are required
 ### Clone Source Codes
 Clone source codes from GENIVI GitHub using following command in the terminal window:
 #### VSI
-Because the latest version of VSI is not compatible with C ++, the VSS Data Collector is implemented based on c2b1c0a Commit.
+Because the latest version of VSI is not compatible with C ++, the VSS Data Collector is implemented based on [c2b1c0a](https://github.com/GENIVI/vehicle_signal_interface/tree/c2b1c0ab0124aa36a30ddd486cf8b373be7b2c0f) Commit.
 
         $ git clone https://github.com/GENIVI/vehicle_signal_interface.git
   
