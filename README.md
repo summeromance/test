@@ -107,7 +107,6 @@ Example
                  ],
                  "3000":
                  [
-                     "Vehicle.Fuel.Level",
                      "Signal.Chassis.Axle.Row1.Wheel.Right.Tire.Pressure",
                      "Signal.Chassis.Axle.Row1.Wheel.Left.Tire.Pressure",           
                      "Signal.Chassis.Axle.Row1.Wheel.Right.Tire.Temperature",
@@ -123,5 +122,16 @@ Example
                  "Vehicle.Light.Front.Right"
              ]
          }
+
+### Environment variables
+VSS Data Collector needs 3 environment variables for run such as generated VSS JSON file, VSS VSI file and configuration file for data collecton. VSS Data Collector reads specified files or if not specified, reads default file in current working directory.
+* VSS_JSON_FILE  
+generated from vspec file using `vsepc2json` (e.g. vss_rel_1.json)
+
+* VSS_COLLECTOR_CONFIGURATION_FILE  
+user defined configuration file for data collection 
+
+* VSS_VSI_FILE  
+generated from vspec file using `vspec2vsi` (e.g. vss_rel_1.vsi)  
 
 
