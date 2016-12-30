@@ -77,4 +77,51 @@ and run VSSDataCollectorTestApp in the other window.
 The DataGenerator generates vehicle data randomly, and flushes data into VSI.
 On VSSDataCollector side, you can check data collection status including data validation results.
 
+### Configuration file for data collection
+Configuration file element explanation:
+* Cycle  
+Contains the data that should be collected periodically.
+   * {cycle} (array)  
+   Specifies the data and collection cycle(miliseconds).
+* Event (array)  
+Contains the data that should be collected by event.
+
+Example
+
+         {
+             "Cycle":
+             {
+                 "1000":
+                 [
+                     "Signal.Drivetrain.Transmission.Speed",
+                     "Signal.Chassis.SteeringWheel.Angle",
+                     "Signal.Chassis.SteeringWheel.Extension",
+                     "Signal.Drivetrain.FuelSystem.AverageConsumption"
+                 ],
+                 "2000":
+                 [
+                     "Signal.Drivetrain.InternalCombustionEngine.Torque",
+                     "Signal.Drivetrain.InternalCombustionEngine.TPS",
+                     "Signal.Chassis.Accelerator.PedalPosition",
+                     "Signal.Chassis.Brake.PedalPosition"
+                 ],
+                 "3000":
+                 [
+                     "Vehicle.Fuel.Level",
+                     "Signal.Chassis.Axle.Row1.Wheel.Right.Tire.Pressure",
+                     "Signal.Chassis.Axle.Row1.Wheel.Left.Tire.Pressure",           
+                     "Signal.Chassis.Axle.Row1.Wheel.Right.Tire.Temperature",
+                     "Signal.Chassis.Axle.Row2.Wheel.Right.Tire.PressureLow",
+                     "Signal.Drivetrain.InternalCombustionEngine.Power"
+                 ]
+             },
+             "Event":
+             [
+                 "Signal.Drivetrain.Transmission.Gear",
+                 "Signal.Body.Mirrors.Left.Heater.Status",
+                 "Vehicle.Light.Front.Left",
+                 "Vehicle.Light.Front.Right"
+             ]
+         }
+
 
