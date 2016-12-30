@@ -29,7 +29,7 @@ Because the latest version of VSI is not compatible with C ++, the VSS Data Coll
 
         $ git clone https://github.com/GENIVI/cat-data-logger.git
   
-        $ git checkout trial_integration
+        $ git checkout trial-integration-with-rvi
   
 ### Build & Install
 #### VSI build & install
