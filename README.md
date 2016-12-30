@@ -20,15 +20,15 @@ To build VSS Data Collector, following package are required
 Clone source codes from GENIVI GitHub using following command in the terminal window:
 * VSI
 
-    $ git clone https://github.com/GENIVI/vehicle_signal_interface.git
+        $ git clone https://github.com/GENIVI/vehicle_signal_interface.git
   
-    $ git checkout 23123123
+        $ git checkout 23123123
 
 * CDL
 
-    $ git clone https://github.com/GENIVI/cat-data-logger.git
+        $ git clone https://github.com/GENIVI/cat-data-logger.git
   
-    $ git checkout trial_integration
+        $ git checkout trial_integration
   
 ### Build & Install
 #### VSI build & install
