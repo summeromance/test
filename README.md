@@ -60,7 +60,7 @@ Navigate to the test directory of VSSDataCollector, and build & install using fo
         $ make
         # make install
         
-After the installation, you can find binaries(Data Generator, VSSDataCollector Test Application) and other files for configuration and generated VSS JSON files using tool vspec2json.py in deploy directory
+After the installation, you can find binaries(Data Generator, VSSDataCollector Test Application) and other files for configuration and generated VSS JSON, VSI files using tool `vspec2json.py` and `vspec2vsi.py` in deploy directory
 
 # Usage
 
