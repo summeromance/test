@@ -1,4 +1,4 @@
-# Car Data Logger Trial Integarion with RVI
+# Car Data Logger Trial Integration with RVI
 This is trial integration of CDL with RVI (components)
 
 The goal of this implementation is to implement the function of collecting, storing and providing data using various components of GENIVI.
