@@ -66,11 +66,11 @@ After the installation, you can find binaries(Data Generator, VSSDataCollector T
 
 ### Run
 Prepare two terminal windows and navigate to the deploy directory of test.
-Run DataGenerator application in one window
+Run DataGenerator application on one terminal
 
         $ ./DataGenerator
         
-and run VSSDataCollectorTestApp in the other window.
+and run VSSDataCollectorTestApp on the other terminal.
 
         $ ./VSSDataCollectorTestApp
         
