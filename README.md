@@ -1,20 +1,35 @@
-# Car Data Logger Trial Integration with RVI
+# VSS Data Collector
 
-This is trial integration of CDL with RVI (components)
+VSS Data Collector is module collecting vehicle data defined with [VSS(Vehicle Signal Specification)](https://github.com/GENIVI/vehicle_signal_specification) using [VSI(Vehicle Signal Inteface)](https://github.com/GENIVI/vehicle_signal_interface)
 
-The goal of this implementation is to implement the function of collecting, storing and providing data using various components of GENIVI.
-So the following functions will be implemented:
-* collect vehicle data defined in VSS format using VSI
-* store collected data to Database (SQlite)
-* provide data to clients running on-board using CommonAPI (DBus and SOME/IP)
-* transfer data to off-board server using RVI
+# Installation
 
-The software platform level requirements collected while implementing the functions defined above will continue to be updated on the [CDL wiki](https://collab.genivi.org/wiki/display/genivi/cdl+software+platform+level+use+cases) page.
+### Tested Envrionment
+VSS Data Collector is implemented and tested on:
+* VMWare Workstation 12 Player (12.1.1 build-3770994)
+* Ubuntu 14.04 64bit
+* Qt 5.6.1 (for test application)
 
-# Status
+### Precondition
+To build VSS Data Collector, following package are required
+* VSI
+* Boost (1.54)
+** system, thread, log
 
-### Implemented Modules
-* VSS Data Collector : please refer to VSSDataCollector page for more detail
+### Clone Source Codes
+Clone source codes from GENIVI GitHub using following command in the terminal window:
+* VSI
 
-### Todo
-* Data storing module using SQLite
+    $ git clone https://github.com/GENIVI/vehicle_signal_interface.git
+  
+    $ git checkout 23123123
+
+* CDL
+
+    $ git clone https://github.com/GENIVI/cat-data-logger.git
+  
+    $ git checkout trial_integration
+  
+### Build & Install
+#### VSI build & install
+
